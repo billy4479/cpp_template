@@ -1,7 +1,11 @@
+#include "MyClass.hpp"
 #include <iostream>
 
 int main() {
-    std::cout << "Hello World!" << std::endl;
+    MyClass my_class(42);
+
+    std::cout << "Hello World!" << std::endl
+              << my_class.get_my_number() << std::endl;
 
     return 0;
 }
