@@ -10,9 +10,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-include(cmake/Cache.cmake)
-include(cmake/Sanitizers.cmake)
-include(cmake/Warnings.cmake)
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+include(Cache)
+include(Sanitizers)
+include(Warnings)
 
 file(
   GLOB_RECURSE
