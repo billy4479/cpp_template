@@ -1,5 +1,4 @@
 #include "MyClass.hpp"
-#include <iostream>
 
 int main() {
     MyClass my_class(42);
